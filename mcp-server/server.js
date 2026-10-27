@@ -58,7 +58,7 @@ function handle(msg) {
   if (msg.method === 'tools/call') {
     const name = msg.params.name;
     const args = msg.params.arguments || {};
-    
+
     if (name === 'find_lecture') {
       const lecture = lectures.find((l) => l.number === args.number);
       if (!lecture) {
@@ -80,7 +80,7 @@ function handle(msg) {
     // Any other request we do not know.
     return { jsonrpc: '2.0', id: msg.id, error: { code: -32601, message: 'Unknown method: ' + msg.method } };
   }
-  
+
   return null;
 }
 
