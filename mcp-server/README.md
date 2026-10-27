@@ -59,3 +59,4 @@ got: {"jsonrpc":"2.0","id":4,"method":"tools/call","params":{"name":"find_lectur
 
 ## The description experiment
 <!-- Three sentences: what you changed in the description, whether the model chose the tool differently, and why you think so. -->
+I have shortened the description for the find_lecture tool. Previously the agent prompted the user to confirm the tool. After changing the description, the agent just returns an answer.
